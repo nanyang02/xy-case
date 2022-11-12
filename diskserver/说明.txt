@@ -1,0 +1,14 @@
+
+# linux run command:
+node fs-mag-sys.cjs & >/dev/null
+
+# termux .bashrc
+if pgrep -f 'node fs-mag-sys.cjs';then
+  echo >/dev/null
+else
+  node fs-mag-sys.cjs & >/dev/null
+  echo 'fs-mag-sys running'
+fi
+
+# window run 
+node fs-mag-sys.cjs &
